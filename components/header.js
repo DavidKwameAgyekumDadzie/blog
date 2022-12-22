@@ -4,6 +4,7 @@ import {
   ImYoutube2,
   ImInstagram,
 } from 'react-icons/im';
+import Link from "next/Link";
 
 export default function header() {
   return (
@@ -13,14 +14,24 @@ export default function header() {
           <input type="text" className="input-text" placeholder="Search..." />
         </div>
         <div className="shrink w-80 sm:order-3 ">
-          <a className="font-bold ">SATELLITE HEALTHCARE FOUNDATION</a>
+          <Link href={'/'}>
+            <h2 className="font-bold ">SATELLITE HEALTHCARE FOUNDATION</h2>
+          </Link>
         </div>
         <div className="w-96 order-3 flex justify-center">
           <div className="flex gap-6">
-            <a><ImFacebook2/></a>
-            <a><ImInstagram/></a>
-            <a><ImTwitter/></a>
-            <a>< ImYoutube2/></a>
+            <Link href={'/'}>
+              <ImFacebook2 />
+            </Link>
+            <Link href={'/'}>
+              <ImInstagram />
+            </Link>
+            <Link href={'/'}>
+              <ImTwitter />
+            </Link>
+            <Link href={'/'}>
+              <ImYoutube2 />
+            </Link>
           </div>
         </div>
       </div>

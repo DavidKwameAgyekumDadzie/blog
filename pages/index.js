@@ -1,6 +1,12 @@
-import styles from '../styles/Home.module.css';
-import Header from '../components/header';
+
+import Format from '../layout/format';
+
 
 export default function Home() {
-  return <Header></Header>;
-}
+  return (
+  <Format>
+    <hi> Main content</hi>
+  </Format>
+  );
+
+};
