@@ -1,14 +1,14 @@
-import {
-  ImFacebook2,
-  ImTwitter,
-  ImYoutube2,
-  ImInstagram,
-} from 'react-icons/im';
+// import {
+//   ImFacebook2,
+//   ImTwitter,
+//   ImYoutube2,
+//   ImInstagram,
+// } from 'react-icons/im';
 import Link from "next/Link";
 
 export default function header() {
   return (
-    <header className="bg-gray-50">
+    <header className="bg-blue-100">
       <div className="xl:container xl:mx-auto flex flex-col items-center sm:flex-row sm:justify-between text-center py-3">
         <div className="md:flex-none w-96 order-2 sm:order-1 flex justify-center py-4 sm:py-0">
           <input type="text" className="input-text" placeholder="Search..." />
@@ -19,6 +19,15 @@ export default function header() {
           </Link>
         </div>
         <div className="w-96 order-3 flex justify-center">
+          <div className="flex gap-6">
+            <Link href={'/'}>Our Mission </Link>
+            <Link href={'/'}>About Us</Link>
+            <Link href={'/'}>Get Involved</Link>
+            <Link href={'/'}>Stories</Link>
+            <Link href={'/'}>Contact</Link>
+          </div>
+        </div>
+        {/* <div className="w-96 order-3 flex justify-center">
           <div className="flex gap-6">
             <Link href={'/'}>
               <ImFacebook2 />
@@ -33,7 +42,7 @@ export default function header() {
               <ImYoutube2 />
             </Link>
           </div>
-        </div>
+        </div> */}
       </div>
     </header>
   );
