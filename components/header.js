@@ -4,7 +4,7 @@
 //   ImYoutube2,
 //   ImInstagram,
 // } from 'react-icons/im';
-import Link from "next/Link";
+import Link from "next/link";
 
 export default function header() {
   return (
